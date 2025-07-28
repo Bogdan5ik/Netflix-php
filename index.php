@@ -10,13 +10,43 @@
 </head>
 <body>
 <?php
-$key1 = [
+$film1 = [
     "name" => "Downtown Abbey",
     "description" => "Этот сериал, обножающий снобизм и интриганство внутри исчезающей классовой системы Англии, рассказывает о событяих жизни семьи Кроули и её слуг.",
     "year" => 2015,
     "image" => "downtownabbey.webp",
-] 
+];
+$film2 = [
+    "name" => "Ыаллыылар",
+    "description" => "Увувава мися вава, уаоу грееееем, лак магост вавагася грааааа.",
+    "rate" => "69 / 10",
+    "image" => "film1.jpg",
+];
+$film3 = [
+    "name" => "Казахи против пришельцев",
+    "description" => "пришельци украли тажика у месного картеля. картель и его друзья казахи пытаются помочь вернуть тажика у пришельцев.",
+    "rate" => "52 / 10",
+    "image" => "film2.jpg",
+];
+$film4 = [
+    "name" => "Базар жок, Мексика!",
+    "description" => "Мексика очень хорошая страна! Так говорил наш друг Джамшут, пока его не нашёл Мексиканский картель, как оказалось Мексиканци не сильно любят казахов.",
+    "rate" => "1488 / 10",
+    "image" => "film3.jpg",
+];
+$film5 = [
+    "name" => "Гаврик потный и Фашисткое яйцо",
+    "description" => "Гаврик переехал в германию, его цель украсть самое дорогое яйцо которое было потерянно миллион лет назад.",
+    "rate" => "10 / 10",
+    "image" => "film4.jpg",
+];
 
+$film6 = [
+    "name" => "Призрачный Гончар",
+    "description" => "Человек получает проклятие, и по ночам становиться Призрачным Гончаром, он делает десять ваз за 5 секунд, сумашествие....",
+    "rate" => "1 / 10",
+    "image" => "film5.jpg",
+];
 ?>
  <!--шапка-->
  <div class="bg-dark p-3 col-12">
@@ -36,13 +66,91 @@ $key1 = [
         </div>
     </div>
 
-    <div class="col-12" style="height: 673px; background-Image: url(<?php echo $key1['image'] ?>); background-size: 100% 100%; padding-top: 170px; padding-left: 100px;">
+    <div class="col-12" style="height: 80%; background-Image: url(<?php echo $film1['image'] ?>); background-size: 100% 100%; padding-top: 170px; padding-left: 100px; position: absolute;">
         <div class="col-3 text-light">
-            <h1><?php echo $key1['name'] ?></h1>
-            <h4><?php echo $key1['description'] ?></h4>
-            <p>Год выпуска:<?php echo $key1['year'] ?></p>
+            <h1><?php echo $film1['name'] ?></h1>
+            <h4><?php echo $film1['description'] ?></h4>
+            <p>Год выпуска:<?php echo $film1['year'] ?></p>
             <button style="background: white; border-radius: 5px; width: 100px; height: 40px;">Смотреть</button>
             <button style="background: gray; border-radius: 5px; width: 100px; height: 40px;">Подробнее</button>
+        </div>
+    </div>
+
+    <div class="col-12" style="height: 50%; position: absolute; top: 86.5%;">
+
+        <div class="col align-items-center d-flex" style="height: 10%; background: gray;">
+            <h1 class="text-light">TOP-5 лучших фильмов по версии чат гпт</h1>
+        </div>
+        
+        <div class="col d-flex" style="height: 90%; background: gray;">
+
+        <div class="col-2" style="">
+            <div class="col justify-content-center d-flex" style="height: 50%;">
+                 <img src="<?php echo $film2['image'] ?>" alt="">
+            </div>
+
+            <div class="col" style="height: 50%; color: white;">
+                <h1><?php echo $film2['name'] ?></h1>
+                <h4><?php echo $film2['description'] ?></h4> <br>
+                <h4>рейтинг: <?php echo $film2['rate'] ?></h4>
+            </div>
+        </div>
+
+
+
+        <div class="col-2" style="margin-left: 3%;" style="">
+            <div class="col justify-content-center d-flex" style="height: 50%;">
+                 <img src="<?php echo $film3['image'] ?>" alt="">
+            </div>
+
+            <div class="col" style="height: 50%; color: white;">
+                <h1><?php echo $film3['name'] ?></h1>
+                <h4><?php echo $film3['description'] ?></h4> <br>
+                <h4>рейтинг: <?php echo $film3['rate'] ?></h4>
+            </div>
+        </div>
+
+
+
+        <div class="col-2" style="margin-left: 3%;" style="">
+            <div class="col justify-content-center d-flex" style="height: 50%;">
+                 <img src="<?php echo $film4['image'] ?>" alt="">
+            </div>
+
+            <div class="col" style="height: 50%; color: white;">
+                <h1><?php echo $film4['name'] ?></h1>
+                <h4><?php echo $film4['description'] ?></h4> <br>
+                <h4>рейтинг: <?php echo $film4['rate'] ?></h4>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 3%;" style="">
+            <div class="col justify-content-center d-flex" style="height: 50%;">
+                 <img src="<?php echo $film5['image'] ?>" alt="">
+            </div>
+
+            <div class="col" style="height: 50%; color: white;">
+                <h1><?php echo $film5['name'] ?></h1>
+                <h4><?php echo $film5['description'] ?></h4> <br>
+                <h4>рейтинг: <?php echo $film5['rate'] ?></h4>
+            </div>
+        </div>
+
+        <div class="col-2" style="margin-left: 3%;" style="">
+            <div class="col justify-content-center d-flex" style="height: 50%;">
+                 <img src="<?php echo $film6['image'] ?>" alt="">
+            </div>
+
+            <div class="col" style="height: 50%; color: white;">
+                <h1><?php echo $film6['name'] ?></h1>
+                <h4><?php echo $film6['description'] ?></h4> <br>
+                <h4>рейтинг: <?php echo $film6['rate'] ?></h4>
+            </div>
+        </div>
+
+        
+
+
         </div>
     </div>
     </body>
